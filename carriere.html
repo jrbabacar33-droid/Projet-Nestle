@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestlé - Good food, Good life</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-top">
+            <div class="logo-area">
+                <img src="image/Nestle-Logo-PNG10.png" alt="Nestlé" class="logo">
+                <span class="tagline">Good food, Good life</span>
+            </div>
+  <button id="themeToggle" class="nestle-btn">🌙Mode Sombre</button>
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <span class="search-icon">🔍</span>
+                </div>
+               
+                <button class="btn-contact">Contact us</button>
+            </div>
+        </div>
+  <nav class="main-nav">
+    
+    <ul>
+      <li><a href="index.html">🏠 Accueil</a></li>
+      <li><a href="produits.html">nos produits</a></li>
+      <li><a href="histoire.html">Nos histoires</a></li>
+      <li><a href="nutrition.html">Nutrition</a></li>
+      <li><a href="carriere.html" class="active">Carrières</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- HERO -->
+  <section class="carriere-hero">
+    <img src="image/carr.jpg" alt="Carrières Nestlé" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="carriere-hero-content">
+      <h1>Carrières</h1>
+    </div>
+  </section>
+
+  <!-- RECHERCHE EMPLOI -->
+  <section class="job-search-bar">
+    <h2>Explorez les opportunités de carrière chez Nestlé</h2>
+    <div class="job-search-form">
+      <div class="job-field">
+        <label>Mot-clé</label>
+        <input type="text" id="jobKeyword" placeholder="Tape ici...">
+      </div>
+      <div class="job-field">
+        <label>Pays ou région</label>
+        <select id="jobCountry">
+          <option value="">— N'importe quel —</option>
+          <option>Sénégal</option>
+          <option>France</option>
+          <option>Belgique</option>
+          <option>Maroc</option>
+          <option>Côte d'Ivoire</option>
+          <option>Suisse</option>
+          <option>Canada</option>
+          <option>Autre</option>
+        </select>
+      </div>
+      <button class="btn-job-search" onclick="searchJobs()">🔍 Recherche d'emplois</button>
+      <button class="btn-job-clear" onclick="clearSearch()">Clair</button>
+    </div>
+    <!-- Résultats simulés -->
+    <div id="jobResults" style="max-width:1000px;margin:24px auto 0;display:none;">
+      <div style="color:rgba(255,255,255,0.9);font-size:.9rem;padding:16px;background:rgba(0,0,0,0.2);border-radius:10px;">
+        <span id="jobResultText"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO + CARDS CONNEXION -->
+  <section class="carriere-intro">
+    <div class="intro-text">
+      <p>Faites partie de Nestlé.</p>
+      <h2>Soyez une force pour le <em>bien</em></h2>
+      <p class="intro-body">
+        Aidez-nous à faire une réelle différence à l'échelle mondiale.
+        Présents dans près de 185 pays, nous sommes déterminés à libérer
+        le pouvoir de la nourriture et des boissons pour améliorer la qualité
+        de vie de tous, aujourd'hui et pour les générations futures.
+        Que vous débutiez ou poursuiviez votre carrière, explorez comment
+        vous pouvez travailler avec nous.
+      </p>
+    </div>
+    <div class="intro-cards">
+      <div class="intro-card pink">
+        <div>
+          <h3>Connexion</h3>
+          <p>Vérifiez le statut de votre candidature ou mettez à jour votre profil candidat Nestlé.</p>
+        </div>
+        <a href="contact.html" target="_blank">CONNEXION ↗</a>
+      </div>
+      <div class="intro-card teal">
+        <div>
+          <h3>Rejoignez la communauté des talents</h3>
+          <p>Restez informé de nos dernières offres d'emploi et opportunités dans votre domaine.</p>
+        </div>
+        <a href="contact.html" target="_blank">INSCRIVEZ-VOUS ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRILLE CARDS -->
+  <section class="career-grid">
+
+    <div class="career-card cc-green reveal">
+      <img src="image/TRAV4.jpeg" alt="Travailler chez Nestlé">
+      <div class="career-card-body">
+        <div>
+          <h3>Travailler chez Nestlé</h3>
+          <p>Rejoignez une communauté mondiale avec un objectif commun. Découvrez notre culture d'entreprise unique.</p>
+        </div>
+        <a href="contact.html">EN SAVOIR PLUS →</a>
+      </div>
+    </div>
+
+    <div class="career-card cc-purple reveal">
+      <img src="image/TRAV2.jpeg" alt="Étudiants">
+      <div class="career-card-body">
+        <div>
+          <h3>Étudiants et diplômés</h3>
+          <p>Découvrez où la vie chez Nestlé pourrait vous mener. Stages, alternances et programmes graduate.</p>
+        </div>
+        <a href="contact.html">EN SAVOIR PLUS →</a>
+      </div>
+    </div>
+
+    <div class="career-card cc-teal reveal">
+      <img src="image/TRAV3.jpeg" alt="Diversité">
+      <div class="career-card-body">
+        <div>
+          <h3>Diversité, équité et inclusion</h3>
+          <p>Nous visons à créer des lieux de travail où chacun se sent inclus et capable de s'apporter pleinement.</p>
+        </div>
+        <a href="contact.html">EN SAVOIR PLUS →</a>
+      </div>
+    </div>
+
+    <div class="career-card cc-brown reveal">
+      <img src="image/TRAV1.jpeg" alt="Parcours recrutement">
+      <div class="career-card-body">
+        <div>
+          <h3>Parcours de recrutement</h3>
+          <p>Découvrez les différentes étapes de notre processus de recrutement et comment vous préparer.</p>
+        </div>
+        <a href="contact.html">EN SAVOIR PLUS →</a>
+      </div>
+    </div>
+
+    <div class="career-card cc-blue reveal">
+      <img src="image/TRAV5.jpeg" alt="Lieux">
+      <div class="career-card-body">
+        <div>
+          <h3>Lieux</h3>
+          <p>Nestlé s'est développée pour devenir une entreprise véritablement mondiale. Découvrez nos sites à travers le monde.</p>
+        </div>
+        <a href="contact.html">EN SAVOIR PLUS →</a>
+      </div>
+    </div>
+
+    <div class="career-card cc-wine reveal">
+      <img src="image/TRAV6.jpeg" alt="FAQ">
+      <div class="career-card-body">
+        <div>
+          <h3>Questions fréquemment posées</h3>
+          <p>Trouvez des réponses à toutes nos questions fréquemment posées sur l'emploi chez Nestlé.</p>
+        </div>
+        <a href="contact.html">EN SAVOIR PLUS →</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SOCIAL #WeAreNestlé -->
+  <section class="wearenestlé">
+    <h2>Suivez-nous <strong>#WeAreNestlé</strong></h2>
+  <div class="social-grid">
+
+  <div class="social-post reveal">
+    <div class="social-post-bg sp-1" style="padding:0;background:none;">
+      <span class="ig-icon" style="z-index:2">📷</span>
+      <img src="image/1.jpeg" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+      <div class="post-text" style="position:relative;z-index:2;padding:20px;">
+        Rejoignez Nestlé.
+        <span>Soyez une force pour le bien 🌍</span>
+      </div>
+    </div>
+    <div class="social-post-tag">@nestle • Instagram</div>
+  </div>
+
+  <div class="social-post reveal">
+    <div class="social-post-bg sp-2" style="padding:0;background:none;">
+      <span class="ig-icon" style="z-index:2">📷</span>
+      <img src="image/2.jpeg" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+      <div class="post-text" style="position:relative;z-index:2;padding:20px;">
+        Smart nutrition
+        <span>to age well ✨</span>
+      </div>
+    </div>
+    <div class="social-post-tag">@nestle • Instagram</div>
+  </div>
+
+  <div class="social-post reveal">
+    <div class="social-post-bg sp-3" style="padding:0;background:none;">
+      <span class="ig-icon" style="z-index:2">📷</span>
+      <img src="image/3.jpeg" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+      <div class="post-text" style="position:relative;z-index:2;padding:20px;">
+        By 2040
+        <span>nearly half of us will be over 40 💪</span>
+      </div>
+    </div>
+    <div class="social-post-tag">@nestle • Instagram</div>
+  </div>
+
+  <div class="social-post reveal">
+    <div class="social-post-bg sp-4" style="padding:0;background:none;">
+      <span class="ig-icon" style="z-index:2">📷</span>
+      <img src="image/4.jpeg" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+      <div class="post-text" style="position:relative;z-index:2;padding:20px;">
+        We're living
+        <span>longer than ever 🤝</span>
+      </div>
+    </div>
+    <div class="social-post-tag">@nestle • Instagram</div>
+  </div>
+
+  <div class="social-post reveal">
+    <div class="social-post-bg sp-5" style="padding:0;background:none;">
+      <span class="ig-icon" style="z-index:2">📷</span>
+      <img src="image/NUT.jpg" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+      <div class="post-text" style="position:relative;z-index:2;padding:20px;">
+        Meet Nestlé Vital
+        <span>Smart nutrition to age well 🥗</span>
+      </div>
+    </div>
+    <div class="social-post-tag">@nestle • Instagram</div>
+  </div>
+
+  <div class="social-post reveal">
+    <div class="social-post-bg sp-6" style="padding:0;background:none;">
+      <span class="ig-icon" style="z-index:2">📷</span>
+      <img src="image/6.jpeg" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+      <div class="post-text" style="position:relative;z-index:2;padding:20px;">
+        Developed with
+        <span>longevity experts 🔬</span>
+      </div>
+    </div>
+    <div class="social-post-tag">@nestle • Instagram</div>
+  </div>
+
+</div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column brand-info">
+        <h2 class="footer-logo">Nestlé</h2>
+        <p>Nous libérons le pouvoir de la nourriture et des boissons pour améliorer la qualité de vie.</p>
+        <img src="image/Nestle-Logo-PNG10.png" width="120">
+      </div>
+      <div class="footer-column">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="produits.html">Nos Produits</a></li>
+          <li><a href="histoire.html">Histoires</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="carriere.html">Recherche d'emploi</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Mon Projet Nestlé — Reproduction à but éducatif</p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOTTANT -->
+  <div class="whatsapp-float">
+    <div class="whatsapp-bubble" id="waBubble">
+      <strong>💬 Discuter avec nous</strong>
+      Posez vos questions sur nos offres d'emploi via WhatsApp !
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <a href="https://wa.me/221770926953?text=Bonjour%20Nestlé%2C%20je%20suis%20intéressé%20par%20vos%20offres%20de%20carrière%20!"
+         target="_blank" class="whatsapp-btn" id="waBtn" title="Contacter sur WhatsApp">
+        💬
+      </a>
+      <span class="whatsapp-label">Assistant recrutement</span>
+    </div>
+  </div>
+
+  <button id="backToTop" class="btn-floating">↑</button>
+
+  <script src="script.js"></script>
+  
+
+ </body>
+</html>
